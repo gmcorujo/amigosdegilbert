@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<html>
+<head>
+	<!-- linkstyles -->
+	{% block linkstyle %}
+	{% endblock %}
+	<style>
+	</style>
+	<!-- styles -->
+	{% block style %}
+	{% endblock %}
+
+	<script></script>
+	<!-- link scripts -->
+	{% block scripts %}
+	{% endblock %}
+</head>
+<body>
+	{% block header %}
+		{% include 'header.html'  %}
+	{% endblock %}
+
+	{% block content %}
+	{% endblock %}
+
+	{% block footer %}
+		{% include 'footer.html'  %}
+	{% endblock %}
+</body>
+</html>
