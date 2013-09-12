@@ -1,1 +1,5 @@
-.content{ margin-top: 51px;}
+body{ background-color: #F1F1F1; }
+.content{ margin-top: 60px; margin-left: 0px;}
+.logo{ height: 50px; }
+.navbar .nav{ margin-left: 15px; }
+input.buscar:focus{ width: 350px; }
