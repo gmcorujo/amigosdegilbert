@@ -12,7 +12,7 @@
 	<!-- styles -->
 	{% block style %}
 	{% endblock %}
-	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}" ></script>
 	<!-- link scripts -->
 	{% block scripts %}
@@ -25,9 +25,12 @@
 	{% endblock %}
 
 	<div class="row content">
-		<div class="container">
 		{% block content %}
 		{% endblock %}
+		<div class="publicidad col-md-2" style="display: inline-block;">
+			<img src="{% static 'images/bono2010.gif' %}" alt="" />
+			<img src="{% static 'images/ban_noti.gif' %}" alt="" />
+			<img src="{% static 'images/ban_depor.gif' %}" alt="" />
 		</div>
 	</div>
 
