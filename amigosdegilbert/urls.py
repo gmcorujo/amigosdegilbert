@@ -14,6 +14,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
+    url(r'^noticias/', include('amigosdegilbert.noticias.urls'), name='noticias'),
+    url(r'^galeria/', include('amigosdegilbert.gallery.urls'), name='gallery'),
     url(r'^$', include('amigosdegilbert.noticias.urls'), name='noticias'),
-    url(r'^noticias/', 'amigosdegilbert.noticias.urls', name='noticias'),
 )
