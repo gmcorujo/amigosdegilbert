@@ -8,7 +8,7 @@
 				{% else %}
 			<li>
 				{% endif %}
-				<a href="/{{ navItem }}/" class="glyphicon glyphicon-{{ navItem.icon }}"> {{ navItem.url|capfirst }}</a>
+				<a href="/{{ navItem.url }}/" class="glyphicon glyphicon-{{ navItem.icon }}"> {{ navItem.url|capfirst }}</a>
 			</li>
 			
 			{% endfor %}
