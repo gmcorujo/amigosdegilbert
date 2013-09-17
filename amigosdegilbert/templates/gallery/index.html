@@ -1,27 +1,8 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block scripts %}
-<script type="text/javascript" >
-(function(){
-	var actions = {
-		showModal : function(evt){
-			var that = $(this).clone();
-			$(that).css("width" , "560px");
-			var imgModal = actions.imgModal;
-			imgModal.find("#body").html(that);
-			imgModal.modal('show');
-			
-		}
-	};
-	var main = function(){
-		actions.imgModal = $("#imgModal");
-		actions.imgModal.modal("hide");
-		$(".gallery img").click(actions.showModal)
-	};
-	$(document).ready(main);
-})();
-
-</script>
+<script type="text/javascript" src="{% static 'js/gallery.js' %}" ></script>
 {% endblock %}
 
 
@@ -47,24 +28,5 @@
 		</div>			
 	{% endfor %}
 </div>
-<!-- Modal -->
-<div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">Modal title</h4>
-			</div>
-		<div class="modal-body">
-		<div class="row">
-			<div class="col-md-11" id="body" ></div>
-		</div>
-		</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Save changes</button>
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+{% include 'gallery/modal.html' %}
 {% endblock %}
