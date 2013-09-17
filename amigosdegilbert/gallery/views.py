@@ -15,8 +15,8 @@ def getImages():
 	return images
 
 def index(request):
-	
 	tempBase = BaseTemplate(request, 'gallery/index.html',
 		{"panels":xrange(5),
 		"images":getImages()})
+	tempBase.setCurrentNav("galeria")
 	return tempBase.render()

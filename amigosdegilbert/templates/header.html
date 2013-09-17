@@ -2,10 +2,17 @@
 <div class="row">
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="/">Noticias</a></li>
-			<li><a href="/galleria/">Galleria</a></li>
-			<li><a href="#">Proyectos</a></li>
-			<li><a href="#">Colaboradores</a></li>
+			{% for navItem in navBar %}
+				{% if navItem == currentNav  %}
+			<li class="active">
+				{% else %}
+			<li>
+				{% endif %}
+				<a href="/{{ navItem }}/">{{ navItem|capfirst }}</a>
+			</li>
+			
+			{% endfor %}
+			
 		</ul>
 		<form class="navbar-form navbar-left" role="search">
 			<div class="form-group">
