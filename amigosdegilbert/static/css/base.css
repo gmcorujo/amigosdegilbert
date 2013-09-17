@@ -4,3 +4,4 @@ body{ background-color: #F1F1F1; }
 .navbar .nav{ margin-left: 15px; }
 /*input.buscar{ transition: width .4s; }*/
 input.buscar:focus{ width: 350px; }
+
