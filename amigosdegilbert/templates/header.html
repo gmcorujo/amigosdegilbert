@@ -3,12 +3,12 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<ul class="nav navbar-nav">
 			{% for navItem in navBar %}
-				{% if navItem == currentNav  %}
+				{% if navItem.url == currentNav  %}
 			<li class="active">
 				{% else %}
 			<li>
 				{% endif %}
-				<a href="/{{ navItem }}/">{{ navItem|capfirst }}</a>
+				<a href="/{{ navItem }}/" class="glyphicon glyphicon-{{ navItem.icon }}"> {{ navItem.url|capfirst }}</a>
 			</li>
 			
 			{% endfor %}

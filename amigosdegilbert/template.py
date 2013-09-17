@@ -1,7 +1,18 @@
 from django.template.response import TemplateResponse
 
+class ItemNav:
+	def __init__(self,url,icon):
+		self.url = url
+		self.icon = icon
+
+
 class BaseTemplate(TemplateResponse):
-	__navBar = "noticias","galeria","proyectos","colaboradores"
+	__navBar = (
+		ItemNav("noticias","bullhorn"),
+		ItemNav("galeria","picture"),
+		ItemNav("proyectos","paperclip"),
+		ItemNav("colaboradores","user")
+		)
 	__currentNav = "noticias"
 	def __init__(self, request, template, context=None, mimetype=None, 
 		status=None, content_type=None, current_app=None):
