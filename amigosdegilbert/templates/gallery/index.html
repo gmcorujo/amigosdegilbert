@@ -1,5 +1,25 @@
 {% extends 'base.html' %}
 
+{% block style %}
+<style>
+	.gallery .row .thumbnail{ margin-bottom: 11px; }
+</style>
+{% endblock %}
+
+
 {% block content %}
-hola mundo
+<div class="gallery col-md-10">
+	{% for i in panels %}
+		<div class="panel panel-warning">
+			<div class="panel-body">
+			<div class="row">
+				{% for img in images %}
+				<div class="col-md-3"><a href="" class="thumbnail"><img src="/static/media/{{ img }}" alt=""></a></div>
+				{% endfor %}
+			</div>
+			</div>
+			<div class="panel-footer">Panel footer</div>
+		</div>			
+	{% endfor %}
+</div>
 {% endblock %}
