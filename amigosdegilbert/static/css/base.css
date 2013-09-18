@@ -36,11 +36,11 @@ a:focus
 .panelsito 
 {
 	position: absolute;
-	top: 20px;
+	top: 50px;
 	right: 0;
 	display: none;
 	background: #000000;
-	border:2px solid #444444;
+	border: 2px solid #444444;
 	-moz-border-radius-topleft: 20px;
 	-webkit-border-top-left-radius: 20px;
 	-moz-border-radius-bottomleft: 20px;
@@ -88,13 +88,13 @@ a.trigger
 	padding: 20px 40px 20px 15px;
 	font-weight: 700;
 	background:#333333;
-	border:1px solid #444444;
+	border: 2px solid #444444;
 	-moz-border-radius-topleft: 20px;
 	-webkit-border-top-left-radius: 20px;
 	-moz-border-radius-bottomleft: 20px;
 	-webkit-border-bottom-left-radius: 20px;
-	-moz-border-radius-bottomleft: 0px;
-	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 20px;
+	-webkit-border-bottom-left-radius: 20px;
 	display: block;
 }
  
@@ -109,20 +109,20 @@ a.trigger:hover
 	color:#fff;
 	padding: 20px 40px 20px 20px;
 	font-weight: 700;
-	background:#222222;
-	border:1px solid #444444;
+	background:#222222 url(static/images/plus.png) 85% 55% no-repeat;
+	border: 2px solid #444444;
 	-moz-border-radius-topleft: 20px;
 	-webkit-border-top-left-radius: 20px;
 	-moz-border-radius-bottomleft: 20px;
 	-webkit-border-bottom-left-radius: 20px;
-	-moz-border-radius-bottomleft: 0px;
-	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 20px;
+	-webkit-border-bottom-left-radius: 20px;
 	display: block;
 }
  
 a.active.trigger 
 {
-	background:#222222;
+	background:#222222 url(images/minus.png) 85% 55% no-repeat;
 }
  
 .columna-nav
