@@ -1,13 +1,13 @@
 (function(){
 		// buscador focus behavior
-		var buscador = document.getElementById("buscador");
-		var content = document.getElementsByClassName("content")[0];
-		buscador.onfocus = function(evt){
-			content.style.marginTop = "110px";
-		};
-		buscador.onblur = function(evt){
-			content.style.marginTop = content.style.marginTop == "110" ? "60px";
-		};
+		// var buscador = document.getElementById("buscador");
+		// var content = document.getElementsByClassName("content")[0];
+		// buscador.onfocus = function(evt){
+		// 	content.style.marginTop = "110px";
+		// };
+		// buscador.onblur = function(evt){
+		// 	content.style.marginTop = (content.style.marginTop == "110px") ? "60px" : "110px";
+		// };
 
 		// navvar hover behavior
 		$(".header .navbar-nav a").hover(
