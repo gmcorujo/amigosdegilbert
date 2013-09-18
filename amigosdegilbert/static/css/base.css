@@ -5,8 +5,6 @@ body{ background-color: #444; }
 /*input.buscar{ transition: width .4s; }*/
 input.buscar:focus{ width: 350px; }
 
-<<<<<<< HEAD
-=======
 .header .navbar-default{ background-color: #47A447; border-color: #50B050; }
 .header .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav>.active>a{color: #FFF;}
@@ -15,11 +13,18 @@ input.buscar:focus{ width: 350px; }
 	background-color: #5CB85C;
 }
 
-.footer nav{
+.footer nav
+{
 	text-align: center;
 	background-color: #ddd; 
 	width: 940px; 
 	margin: 25px auto 10px;
 	padding: 5px;
 }
->>>>>>> b2b505f335436a647c993f8b771340052d817b56
+
+
+#menu-left
+{
+	background-color: #FFF;
+	position: relative;
+}
