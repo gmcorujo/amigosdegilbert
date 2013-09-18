@@ -27,3 +27,122 @@ input.buscar:focus{ width: 350px; }
 	.logo, .navbar-brand{ display: inline-block; }
 	.header .navbar-nav .inner-text{ display: inline; }
 }
+
+a:focus 
+{
+	outline: none;
+}
+
+.panelsito 
+{
+	position: absolute;
+	top: 20px;
+	right: 0;
+	display: none;
+	background: #000000;
+	border:2px solid #444444;
+	-moz-border-radius-topleft: 20px;
+	-webkit-border-top-left-radius: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	width: 540px;
+	height: auto;
+	padding: 10px 10px 10px 100px;
+	filter: alpha(opacity=85);
+	opacity: .95;
+}
+ 
+.panelsito p
+{
+	margin: 0 0 15px 0;
+	padding: 0;
+	color: #cccccc;
+}
+ 
+.panelsito a, .panelsito a:visited
+{
+	margin: 0;
+	padding: 0;
+	color: #9FC54E;
+	text-decoration: none;
+	border-bottom: 1px solid #9FC54E;
+}
+ 
+.panelsito a:hover, .panelsito a:visited:hover
+{
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 1px solid #ffffff;
+}
+ 
+a.trigger
+{
+	position: absolute;
+	top: 80px; right: 0;
+	font-size: 16px;
+	letter-spacing:-1px;
+	font-family: verdana, helvetica, arial, sans-serif;
+	color:#fff;
+	padding: 20px 40px 20px 15px;
+	font-weight: 700;
+	background:#333333;
+	border:1px solid #444444;
+	-moz-border-radius-topleft: 20px;
+	-webkit-border-top-left-radius: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	display: block;
+}
+ 
+a.trigger:hover
+{
+	position: absolute;
+	text-decoration: none;
+	top: 80px; left: 0;
+	font-size: 16px;
+	letter-spacing:-1px;
+	font-family: verdana, helvetica, arial, sans-serif;
+	color:#fff;
+	padding: 20px 40px 20px 20px;
+	font-weight: 700;
+	background:#222222;
+	border:1px solid #444444;
+	-moz-border-radius-topleft: 20px;
+	-webkit-border-top-left-radius: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	display: block;
+}
+ 
+a.active.trigger 
+{
+	background:#222222;
+}
+ 
+.columna-nav
+{
+	clear: both;
+	width: 330px;
+	padding: 0 0 20px 0;
+	line-height: 22px;
+}
+
+ul
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+ 
+ul li
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}

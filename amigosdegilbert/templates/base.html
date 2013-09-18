@@ -15,6 +15,16 @@
 	<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}" ></script>
 
+	<script type="text/javascript">
+		$(document).ready(function(){
+    	$(".trigger").click(function(){
+        	$(".panelsito").toggle("fast");
+        	$(this).toggleClass("active");
+        	return false;
+    	});
+	});
+
+</script>
 	<!-- link scripts -->
 	{% block scripts %}
 	{% endblock %}
@@ -26,14 +36,35 @@
 	{% endblock %}
 	</div>
 
+
 	<div class="row content">
 		{% block content %}
 		{% endblock %}
+		
 		<div class="publicidad col-md-2" style="display: inline-block;">
+			<!--Panel Lateral -->
+			<div class="panelsito">
+				<h3>Panel Slider Derecha!</h3>
+				<p>Panel usando Jquery a ver si me sale!!</p>
+				<div style="clear:both;"></div>
+				<div class="columna-nav">
+					<h3>Navegacion</h3>
+						<ul>
+							<li href="#">Twitter</li>
+							<li href="#">Facebook</li>
+							<li href="#">Contacto</li>
+						</ul>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			<a class="trigger" href="#">C</a>
+			<!--endPanel-->
+
 			<img src="{% static 'images/bono2010.gif' %}" alt="" />
 			<img src="{% static 'images/ban_noti.gif' %}" alt="" />
 			<img src="{% static 'images/ban_depor.gif' %}" alt="" />
 		</div>
+		
 	</div>
 
 	{% block footer %}
