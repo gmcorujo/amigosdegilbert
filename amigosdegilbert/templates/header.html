@@ -17,7 +17,7 @@
 			{% else %}
 		<li>
 			{% endif %}
-			<a href="/{{ navItem.url }}/" class="glyphicon glyphicon-{{ navItem.icon }}"> {{ navItem.url|capfirst }}</a>
+			<a href="/{{ navItem.url }}/" class="glyphicon glyphicon-{{ navItem.icon }}"> <span class="inner-text">{{ navItem.url|capfirst }}</span></a>
 		</li>
 		
 		{% endfor %}

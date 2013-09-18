@@ -1,7 +1,8 @@
 body{ background-color: #F1F1F1; }
 .content{ margin-top: 60px; margin-left: 0px;}
 .logo{ height: 50px; }
-/*input.buscar{ transition: width .4s; }*/
+
+
 input.buscar:focus{ width: 350px; }
 .logo{ 
 	background-image: url('/static/images/logo.png');
@@ -9,8 +10,11 @@ input.buscar:focus{ width: 350px; }
 	height: 50px; width: 129px;
 	margin-left: 15px;
 }
+/* logo nav-var preset */
 .logo,.nav.navbar-nav{ margin-left: 15px; }
+.header .navbar-nav .inner-text{ display: none;}
 
+/*  low resolution responsive */
 @media only screen  and (max-device-width : 1024px){
 	.content{
 		margin-top: 110px;
@@ -21,4 +25,5 @@ input.buscar:focus{ width: 350px; }
 		background-color: #F0F0F0;
 	}
 	.logo, .navbar-brand{ display: inline-block; }
+	.header .navbar-nav .inner-text{ display: inline; }
 }
