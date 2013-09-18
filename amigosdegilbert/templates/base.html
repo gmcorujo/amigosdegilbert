@@ -14,15 +14,17 @@
 	{% endblock %}
 	<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}" ></script>
+
 	<!-- link scripts -->
 	{% block scripts %}
 	{% endblock %}
 </head>
 <body>
-	
+	<div class="row header">
 	{% block header %}
 		{% include 'header.html'  %}
 	{% endblock %}
+	</div>
 
 	<div class="row content">
 		{% block content %}
@@ -37,6 +39,6 @@
 	{% block footer %}
 		{% include 'footer.html'  %}
 	{% endblock %}
-
+	<script type="text/javascript" src="{% static 'js/base-foot.js' %}" ></script>
 </body>
 </html>

@@ -1,7 +1,24 @@
 body{ background-color: #F1F1F1; }
 .content{ margin-top: 60px; margin-left: 0px;}
 .logo{ height: 50px; }
-.navbar .nav{ margin-left: 15px; }
 /*input.buscar{ transition: width .4s; }*/
 input.buscar:focus{ width: 350px; }
+.logo{ 
+	background-image: url('/static/images/logo.png');
+	background-size: 129px 50px;
+	height: 50px; width: 129px;
+	margin-left: 15px;
+}
+.logo,.nav.navbar-nav{ margin-left: 15px; }
 
+@media only screen  and (max-device-width : 1024px){
+	.content{
+		margin-top: 110px;
+	}
+	.header .up_wrap{
+		width: 100%;
+		/*border-bottom: dashed 1px #999;*/
+		background-color: #F0F0F0;
+	}
+	.logo, .navbar-brand{ display: inline-block; }
+}
