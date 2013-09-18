@@ -9,7 +9,7 @@
 			content.style.marginTop = content.style.marginTop == "110" ? "60px";
 		};
 
-		// navvar hover hover behavior
+		// navvar hover behavior
 		$(".header .navbar-nav a").hover(
 			function(evt){
 				var innerText = this.childNodes[1];
