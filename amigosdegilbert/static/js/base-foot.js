@@ -1,15 +1,15 @@
 (function(){
 		// buscador focus behavior
-		var buscador = document.getElementById("buscador");
-		var content = document.getElementsByClassName("content")[0];
-		buscador.onfocus = function(evt){
-			content.style.marginTop = "110px";
-		};
-		buscador.onblur = function(evt){
-			content.style.marginTop = content.style.marginTop == "110" ? "60px";
-		};
+		// var buscador = document.getElementById("buscador");
+		// var content = document.getElementsByClassName("content")[0];
+		// buscador.onfocus = function(evt){
+		// 	content.style.marginTop = "110px";
+		// };
+		// buscador.onblur = function(evt){
+		// 	content.style.marginTop = (content.style.marginTop == "110px") ? "60px" : "110px";
+		// };
 
-		// navvar hover hover behavior
+		// navvar hover behavior
 		$(".header .navbar-nav a").hover(
 			function(evt){
 				var innerText = this.childNodes[1];
