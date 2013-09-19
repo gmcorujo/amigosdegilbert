@@ -22,17 +22,17 @@ a:focus
 .panelsito 
 {
 	position: fixed;
-	top: 80px;
+	top: 60px;
 	right: 0px;
 	display: none;
-	background: rgba(0,0,0,.95);
+	background: rgba(0,0,0,.90);
 	border:2px solid #444;
 	border-right: none;
 	-moz-border-radius: 20px 0px 0px 20px;
 	-webkit-border-radius: 20px 0px 0px 20px;
 	width: 540px;
 	height: auto;
-	padding: 10px 10px 10px 100px;
+	padding: 10px 10px 10px 50px;
 	filter: alpha(opacity=85);
 }
  
@@ -64,8 +64,8 @@ a:focus
 a.trigger
 {
 	position: fixed;
-	top: 90px; right: 0px;
-	padding: 20px 40px 20px 15px;
+	top: 65px; right: 0px;
+	padding: 15px 10px 15px 15px;
 	
 	font-size: 16px;
 	letter-spacing:-1px;
@@ -130,6 +130,7 @@ ul li
 	}
 	.logo, .navbar-brand{ display: inline-block; }
 	.header .navbar-nav .inner-text{ display: inline; }
-	.panelsito{ top: 190px; }
-	a.trigger{  top: 200px;}
+	.panelsito{ top: 110px; }
+	a.trigger{  top: 115px;}
 }
+.panelsito h3{ color: #777; }
