@@ -16,13 +16,13 @@
 	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}" ></script>
 
 	<script type="text/javascript">
-	$(document).ready(function(){
-    	$(".trigger").click(function(){
-        	$(".panelsito").toggle("fast");
-        	$(this).toggleClass("active");
-        	return false;
-    	});
-	});
+		$(document).ready(function(){
+	    	$(".trigger").click(function(){
+	        	$(".panelsito").toggle("fast");
+	        	$(this).toggleClass("active");
+	        	return false;
+	    	});
+		});
 	</script>
 	<!-- link scripts -->
 	{% block scripts %}
