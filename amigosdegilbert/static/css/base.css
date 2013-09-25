@@ -12,21 +12,7 @@ input.buscar:focus{ width: 350px; }
 }
 /* logo nav-var preset */
 .logo,.nav.navbar-nav{ margin-left: 15px; }
-.header .navbar-nav .inner-text{ display: none;}
-
-/*  low resolution responsive */
-@media only screen  and (max-device-width : 1024px){
-	.content{
-		margin-top: 110px;
-	}
-	.header .up_wrap{
-		width: 100%;
-		/*border-bottom: dashed 1px #999;*/
-		background-color: #F0F0F0;
-	}
-	.logo, .navbar-brand{ display: inline-block; }
-	.header .navbar-nav .inner-text{ display: inline; }
-}
+.header .navbar-nav .inner-text, a.trigger>.inner-text{ display: none;}
 
 a:focus 
 {
@@ -36,22 +22,17 @@ a:focus
 .panelsito 
 {
 	position: fixed;
-	top: 80px;
-	right: 0;
+	top: 60px;
+	right: 0px;
 	display: none;
-	border: 2px solid #444444;
-	-moz-border-radius-topleft: 20px;
-	-webkit-border-top-left-radius: 20px;
-	-moz-border-radius-bottomleft: 20px;
-	-webkit-border-bottom-left-radius: 20px;
-	-moz-border-radius: 20px 0px 0px 20px;
-	-webkit-border-radius: 20px 0px 0px 20px;
-	background: rgba(0,0,0,.95);
+	background: rgba(0,0,0,.90);
 	border:2px solid #444;
 	border-right: none;
+	-moz-border-radius: 20px 0px 0px 20px;
+	-webkit-border-radius: 20px 0px 0px 20px;
 	width: 540px;
 	height: auto;
-	padding: 10px 10px 10px 100px;
+	padding: 10px 10px 10px 50px;
 	filter: alpha(opacity=85);
 }
  
@@ -83,23 +64,17 @@ a:focus
 a.trigger
 {
 	position: fixed;
-	top: 80px; right: 0px;
-	padding: 20px 40px 20px 15px;
+	top: 65px; right: 0px;
+	padding: 15px 10px 15px 15px;
 	font-size: 16px;
 	letter-spacing:-1px;
 	font-family: verdana, helvetica, arial, sans-serif;
 	font-weight: 700;
-	border: 2px solid #444444;
-	-moz-border-radius-topleft: 20px;
-	-webkit-border-top-left-radius: 20px;
-	-moz-border-radius-bottomleft: 20px;
-	-webkit-border-bottom-left-radius: 20px;
-	-moz-border-radius-bottomleft: 20px;
-	-webkit-border-bottom-left-radius: 20px;
-	-moz-border-radius: 20px 0px 0px 20px;
-	-webkit-border-radius: 20px 0px 0px 20px;
 	color:#FFF;
 	background:#333;
+	border:1px solid #444;
+	-moz-border-radius: 20px 0px 0px 20px;
+	-webkit-border-radius: 20px 0px 0px 20px;
 	display: block;
 }
  
@@ -136,3 +111,20 @@ ul li
 	margin: 0px;
 	list-style-type: none;
 }
+
+/*  low resolution responsive */
+@media only screen  and (max-device-width : 1024px){
+	.content{
+		margin-top: 110px;
+	}
+	.header .up_wrap{
+		width: 100%;
+		/*border-bottom: dashed 1px #999;*/
+		background-color: #F0F0F0;
+	}
+	.logo, .navbar-brand{ display: inline-block; }
+	.header .navbar-nav .inner-text{ display: inline; }
+	.panelsito{ top: 110px; }
+	a.trigger{  top: 115px;}
+}
+.panelsito h3{ color: #777; }

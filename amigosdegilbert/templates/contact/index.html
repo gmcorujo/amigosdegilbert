@@ -1,15 +1,27 @@
 <div class="panelsito">
-	<h3>Contactanos:</h3>
-	<p>Envianos tu comentario o consultas.</p>
+	<h3>Panel de Contacto!</h3>
+	<from class="form-horizontal" role="form">
+		<div class="form-group" >
+			<div class="col-lg-10"><input type="text" class="form-control" id="inputNombre" placeholder="Nombre Completo"></div>
+		</div>
+		<div class="form-group" >
+			<div class="col-lg-10"><input type="text" class="form-control" id="inputTelefono" placeholder="Telefono"></div>
+		</div>
+		<div class="form-group" >	
+			<div class="col-lg-10"><input type="text" class="form-control" id="inputEmail" placeholder="Email"></div>
+		</div>
+		<div class="form-group">
+			<div class="col-lg-10"><input type="text" class="form-control" id="inputAsunto" placeholder="Asunto"></div>
+		</div>
+		<textarea class="form-control" name="" id="menssage" cols="30" rows="7" placeholder="Contenido del mensaje"></textarea>
+		<br>
+		<button class="btn btn-primary" type="submit">Enviar Comentario</button>
+	</from>
 	<div style="clear:both;"></div>
-	<div class="columna-nav">
-		<h3>Navegacion</h3>
-			<ul>
-				<li href="#">Twitter</li>
-				<li href="#">Facebook</li>
-				<li href="#">Contacto</li>
-			</ul>
-	</div>
+
 	<div style="clear:both;"></div>
 </div>
-<a class="trigger" href="#">Contacto</a>
+<a class="trigger" href="#">
+	<span class="glyphicon glyphicon-envelope"></span>
+	<span class="inner-text">Contacto</span>
+</a>

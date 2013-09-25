@@ -15,15 +15,6 @@
 	<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}" ></script>
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-	    	$(".trigger").click(function(){
-	        	$(".panelsito").toggle("fast");
-	        	$(this).toggleClass("active");
-	        	return false;
-	    	});
-		});
-	</script>
 	<!-- link scripts -->
 	{% block scripts %}
 	{% endblock %}
@@ -40,7 +31,7 @@
 		{% block content %}
 		{% endblock %}
 		
-		<div class="publicidad col-md-2" style="display: inline-block;">
+		<div class="publicidad col-md-2" >
 			<!--Panel Lateral -->
 			{% include 'contact/index.html' %}
 			<!--endPanel-->
